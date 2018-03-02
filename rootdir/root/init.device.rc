@@ -120,6 +120,9 @@ on property:dev.bootcomplete=1
     # write /sys/devices/system/cpu/cpu3/cpufreq/scaling_max_freq 2150400
     # write /sys/class/kgsl/kgsl-3d0/max_gpuclk 624000000
 
+    # Disable touch boost
+    write /sys/module/cpu_boost/parameters/input_boost_enabled 0
+
 on post-fs-data
     # Create directories for Fingerprint
     mkdir /data/misc/stargate 0770 system system
