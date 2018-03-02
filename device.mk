@@ -47,10 +47,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/mixer_paths_tasha.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths_tasha.xml \
     $(LOCAL_PATH)/audio/sound_trigger_mixer_paths.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sound_trigger_mixer_paths.xml
 
-# GoogleCamera
-#PRODUCT_PACKAGES += \
-  camera.msm8996
-
 # Keylayouts
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/keylayout/atmel_mxt_T100_touchscreen.kl:system/usr/keylayout/atmel_mxt_T100_touchscreen.kl \
@@ -70,26 +66,29 @@ PRODUCT_PACKAGES += \
     qdcm_calib_data_mdss_dsi_sharp_qhd_dualdsi_cmd.xml
 
 # Thermal
-#PRODUCT_COPY_FILES += \
-#    $(LOCAL_PATH)/configs/thermal-engine.conf:system/etc/thermal-engine.conf
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/thermal-engine.conf:system/etc/thermal-engine.conf
 
 # Thermal
-#PRODUCT_PACKAGES += \
-#    thermal.msm8996
+PRODUCT_PACKAGES += \
+    thermal.msm8996
 
 # VR
-#PRODUCT_PACKAGES += \
-#    vr.msm8996
+PRODUCT_PACKAGES += \
+    vr.msm8996 \
+    android.hardware.vr@1.0-impl \
+    android.hardware.vr@1.0-service
 
-#PRODUCT_COPY_FILES += \
-#    frameworks/native/data/etc/android.hardware.vr.high_performance.xml:system/etc/permissions/android.hardware.vr.high_performance.xml
+PRODUCT_COPY_FILES += \
+    frameworks/native/data/etc/android.hardware.vr.high_performance.xml:system/vendor/etc/permissions/android.hardware.vr.high_performance.xml \
+    $(LOCAL_PATH)/configs/thermal-engine-vr.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine-vr.conf
 
 # Power
-#PRODUCT_PACKAGES += \
-#    power.msm8996
+PRODUCT_PACKAGES += \
+    power.msm8996
 
-#PRODUCT_COPY_FILES += \
-#    $(LOCAL_PATH)/configs/powerhint.xml:system/etc/powerhint.xml
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/powerhint.xml:system/etc/powerhint.xml
 
 # QMI
 PRODUCT_PACKAGES += \
