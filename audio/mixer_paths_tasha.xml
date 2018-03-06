@@ -45,8 +45,8 @@
     <ctl name="DEC1 Volume" value="84" />
     <ctl name="DEC2 Volume" value="84" />
     <ctl name="DEC3 Volume" value="84" />
-    <ctl name="DEC4 Volume" value="96" />
-    <ctl name="DEC5 Volume" value="96" />
+    <ctl name="DEC4 Volume" value="84" />
+    <ctl name="DEC5 Volume" value="84" />
     <ctl name="DEC6 Volume" value="84" />
     <ctl name="DEC7 Volume" value="84" />
     <ctl name="DEC8 Volume" value="84" />
@@ -1334,13 +1334,6 @@
         <path name="low-latency-record bt-sco" />
     </path>
 
-    <path name="afe-proxy-playback afe-proxy">
-    </path>
-
-    <path name="afe-proxy-record afe-proxy">
-    </path>
-
-
     <path name="low-latency-record usb-headset-mic">
         <ctl name="MultiMedia5 Mixer AFE_PCM_TX" value="1" />
     </path>
@@ -2497,7 +2490,7 @@
     </path>
 
     <path name="handset-stereo-dmic-ef">
-        <path name="handset-dmic-endfire" />
+        <path name="speaker-dmic-endfire" />
         <ctl name="ADC1 Volume" value="12" />
         <ctl name="ADC4 Volume" value="12" />
     </path>
@@ -2685,10 +2678,8 @@
     </path>
 
     <path name="voice-tx">
-        <path name="voice-headset-mic" />
     </path>
 
     <path name="voice-rx">
-        <path name="voice-headphones" />
     </path>
 </mixer>
