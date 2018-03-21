@@ -125,7 +125,7 @@ on property:dev.bootcomplete=1
     # write /sys/devices/system/cpu/cpu1/cpufreq/scaling_max_freq 1593600
     # write /sys/devices/system/cpu/cpu2/cpufreq/scaling_max_freq 2150400
     # write /sys/devices/system/cpu/cpu3/cpufreq/scaling_max_freq 2150400
-    # write /sys/class/kgsl/kgsl-3d0/max_gpuclk 682800000
+    # write /sys/class/kgsl/kgsl-3d0/max_gpuclk 624000000
 
     # Disable touch boost
     write /sys/module/cpu_boost/parameters/input_boost_enabled 0
