@@ -187,4 +187,3 @@ service nvm_service /system/bin/nvm_service
 
 on property:sys.boot_completed=1
     start nvm_service
->>>>>>> 962be51... x2: sepolicy: re-add fingerprint policies
