@@ -126,6 +126,7 @@ on property:dev.bootcomplete=1
     write /sys/module/cpu_boost/parameters/input_boost_enabled 0
 
 # autofocus fix
+on property:persist.camera.focus_fix=0
     write /sys/module/msm_actuator/parameters/use_focus_fix 0
 
 on property:persist.camera.focus_fix=1
