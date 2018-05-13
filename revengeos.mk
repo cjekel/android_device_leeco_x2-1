@@ -33,6 +33,9 @@ TARGET_DENSITY := xxxhdpi
 TARGET_BOOT_ANIMATION_RES := 1440
 TARGET_INCLUDE_ARCORE := true
 
+LINEAGE_BUILDTYPE := RELEASE
+OTA_XML := https://raw.githubusercontent.com/Lucchetto/OTAs/master/x2.xml
+
 PRODUCT_GMS_CLIENTID_BASE := leeco
 
 TARGET_VENDOR_PRODUCT_NAME := LeMax2
