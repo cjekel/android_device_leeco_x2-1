@@ -8,8 +8,14 @@ ro.product.device=le_x2
 ro.product.board=msm8996
 ro.product.manufacturer=LeMobile
 ro.config.le_hardware_version=HW_1.0.0
-ro.le.mtpname=Le Max2
+ro.display.series=Le Max 2
 persist.sys.le_fast_chrg_enable=1
+
+# Apical AD
+ro.qcom.ad.calib.data=/system/etc/ad_calib_x2.cfg
+
+# Display
+ro.sf.lcd_density=560
 
 # Fingerprint
 persist.qfp=true
@@ -39,14 +45,7 @@ persist.qfp.ssc_basis_s2=/persist/qc_senseid/bg_estimation/bg_small2_basis.dat
 persist.qfp.ssc_basis_s2_off=/persist/qc_senseid/bg_estimation/bg_small2_off_basis.dat
 persist.qfp.eeprom=/sys/bus/i2c/devices/8-0051/eeprom
 
-# Apical AD
-ro.qcom.ad.calib.data=/system/etc/ad_calib_x2.cfg
-
-# GPS
-persist.loc.nlp_name=com.qualcomm.location
-
-# Screen Density
-ro.sf.lcd_density=560
-
 # Focus Fix
 persist.camera.focus_fix=0
+# Radio
+persist.radio.multisim.config=dsds
