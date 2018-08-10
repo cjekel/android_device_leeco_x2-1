@@ -24,10 +24,13 @@ $(call inherit-product, device/leeco/x2/device.mk)
 TARGET_ARCH := arm64
 TARGET_DENSITY := xxxhdpi
 TARGET_BOOT_ANIMATION_RES := 1440
-$(call inherit-product, vendor/aosp/common.mk)
+#$(call inherit-product, vendor/aosp/common.mk)
+# Inherit some common CarbonRom stuff.
+$(call inherit-product, vendor/carbon/config/common.mk)
+$(call inherit-product, vendor/carbon/config/gsm.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := aosp_x2
+PRODUCT_NAME := carbon_x2
 PRODUCT_DEVICE := x2
 PRODUCT_MANUFACTURER := LeEco
 PRODUCT_BRAND := LeEco

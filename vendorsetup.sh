@@ -1,1 +1,1 @@
-add_lunch_combo aosp_x2-userdebug
+add_lunch_combo carbon_x2-userdebug
