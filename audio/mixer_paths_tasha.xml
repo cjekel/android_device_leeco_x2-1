@@ -1784,6 +1784,7 @@
         <ctl name="IIR0 INP0 MUX" value="DEC7" />
     </path>
 
+<!-- Edited for stereo audio (testing needed) -->
     <path name="speaker">
         <ctl name="SLIM RX0 MUX" value="AIF_MIX1_PB" />
         <ctl name="SLIM RX1 MUX" value="AIF_MIX1_PB" />
@@ -1798,6 +1799,11 @@
         <ctl name="SpkrRight VISENSE Switch" value="1" />
         <ctl name="SpkrLeft SWR DAC_Port Switch" value="1" />
         <ctl name="SpkrRight SWR DAC_Port Switch" value="1" />
+		<<!-- Enabling earpiece speaker, a bit louder -->
+        <ctl name="RX INT0_1 MIX1 INP0" value="RX0" />
+        <ctl name="RX INT0 DEM MUX" value="CLSH_DSM_OUT" />
+        <ctl name="EAR PA Gain" value="G_6_DB" />
+        <ctl name="RX0 Digital Volume" value="92" />
     </path>
 
     <path name="speaker-fluid">
