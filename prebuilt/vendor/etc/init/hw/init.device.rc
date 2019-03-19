@@ -68,10 +68,6 @@ on boot
     # Camera focus fix parameter
     chown system system /sys/module/msm_actuator/parameters/use_focus_fix
 
-    # LiveDisplay
-    chown system system /sys/devices/virtual/graphics/fb0/rgb
-    chmod 664 /sys/devices/virtual/graphics/fb0/rgb
-
 on post-fs-data
     # Create directories for Fingerprint
     mkdir /data/misc/stargate 0770 system system
