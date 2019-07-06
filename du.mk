@@ -28,8 +28,7 @@ TARGET_DENSITY := xxxhdpi
 TARGET_BOOT_ANIMATION_RES := 1440
 
 # Inherit some common du stuff.
-$(call inherit-product, vendor/du/config/common.mk)
-$(call inherit-product, vendor/du/config/gsm.mk) 
+$(call inherit-product, vendor/du/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := du_x2
