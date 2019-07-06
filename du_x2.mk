@@ -26,14 +26,13 @@ TARGET_GAPPS_ARCH := arm64
 USE_GCAM := true
 TARGET_DENSITY := xxxhdpi
 TARGET_BOOT_ANIMATION_RES := 1440
-REVENGEOS_BUILDTYPE := OFFICIAL
 
-# Inherit some common RevengeOS stuff.
-$(call inherit-product, vendor/revengeos/config/common.mk)
-$(call inherit-product, vendor/revengeos/config/gsm.mk) 
+# Inherit some common du stuff.
+$(call inherit-product, vendor/du/config/common.mk)
+$(call inherit-product, vendor/du/config/gsm.mk) 
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := revengeos_x2
+PRODUCT_NAME := du_x2
 PRODUCT_DEVICE := x2
 PRODUCT_BRAND := LeEco
 PRODUCT_MODEL := Le Max 2
